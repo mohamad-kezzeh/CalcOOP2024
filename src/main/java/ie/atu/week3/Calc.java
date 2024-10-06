@@ -15,6 +15,7 @@ public class Calc {
         switch (operation){
             case "add": add(a, b); break;
             case "subtract": subtract(a, b); break;
+            case "multiply": multiply(a,b); break;
             default: System.out.println("Invalid operation"); break;
 
         }
@@ -29,5 +30,10 @@ public class Calc {
     public static void subtract(int a, int b){
         int sum = a - b;
         System.out.println(sum);
+    }
+    //add method to multiply two numbers
+    public static void multiply(int a, int b){
+        int resul = a * b;
+        System.out.println(resul);
     }
 }
