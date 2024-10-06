@@ -16,6 +16,7 @@ public class Calc {
             case "add": add(a, b); break;
             case "subtract": subtract(a, b); break;
             case "multiply": multiply(a,b); break;
+            case "divide": divide(a, b); break;
             default: System.out.println("Invalid operation"); break;
 
         }
@@ -34,6 +35,11 @@ public class Calc {
     //add method to multiply two numbers
     public static void multiply(int a, int b){
         int resul = a * b;
+        System.out.println(resul);
+    }
+    //add method to divide two numbers
+    public static void divide(int a, int b){
+        int resul = a / b;
         System.out.println(resul);
     }
 }
